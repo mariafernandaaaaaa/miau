@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Painel de Planejamento de Vídeo Kawaii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-decorations">
+        <div class="paw-print paw-1">🐾</div>
+        <div class="paw-print paw-2">🐾</div>
+        <div class="paw-print paw-3">🐾</div>
+        <div class="paw-print paw-4">🐾</div>
+        <div class="heart heart-1">💜</div>
+        <div class="heart heart-2">💜</div>
+        <div class="heart heart-3">💜</div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">🎬 Painel de Planejamento de Vídeo</h1>
+            <p class="subtitle">Organize suas ideias de forma fofa e eficiente! 🐱✨</p>
+        </header>
+
+        <div class="cards-grid">
+            <!-- Card 1: Objetivo do Vídeo -->
+            <div class="card card-purple">
+                <div class="card-header">
+                    <span class="card-icon">🎯</span>
+                    <h2 class="card-title">Objetivo do Vídeo</h2>
+                    <div class="kawaii-cat cat-1">🐱</div>
+                </div>
+                <div class="card-content">
+                    <label for="objetivo">Qual é o foco principal desse vídeo?</label>
+                    <textarea id="objetivo" placeholder="Ex: divulgar produto, gerar engajamento, mostrar bastidores etc." rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Card 2: Produto em Destaque -->
+            <div class="card card-pink">
+                <div class="card-header">
+                    <span class="card-icon">🛏️</span>
+                    <h2 class="card-title">Produto em Destaque</h2>
+                    <div class="kawaii-cat cat-2">😸</div>
+                </div>
+                <div class="card-content">
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="produto" value="jogo-cama">
+                            <span class="checkmark"></span>
+                            Jogo de cama
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="produto" value="cobre-leito">
+                            <span class="checkmark"></span>
+                            Cobre leito
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="produto" value="edredom">
+                            <span class="checkmark"></span>
+                            Edredom
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="produto" value="toalha-banho">
+                            <span class="checkmark"></span>
+                            Toalha de banho
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="produto" value="travesseiro">
+                            <span class="checkmark"></span>
+                            Travesseiro
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="produto" value="outro" id="produto-outro">
+                            <span class="checkmark"></span>
+                            Outro:
+                            <input type="text" id="produto-outro-texto" placeholder="Digite aqui..." class="inline-input">
+                        </label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="modelo-produto">🖍️ Modelo/Nome do produto</label>
+                        <input type="text" id="modelo-produto" placeholder="Digite o modelo ou nome do produto">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="cor-produto">🎨 Cor usada no vídeo</label>
+                        <input type="text" id="cor-produto" placeholder="Digite a cor principal">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Gancho Inicial -->
+            <div class="card card-blue">
+                <div class="card-header">
+                    <span class="card-icon">🚨</span>
+                    <h2 class="card-title">Gancho Inicial (Hook)</h2>
+                    <div class="kawaii-cat cat-3">😻</div>
+                </div>
+                <div class="card-content">
+                    <label for="gancho">📢 Frase de impacto ou cena visual para prender atenção nos 2 primeiros segundos</label>
+                    <textarea id="gancho" placeholder="Digite sua frase de impacto aqui..." rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Card 4: Cenas que Serão Gravadas -->
+            <div class="card card-green">
+                <div class="card-header">
+                    <span class="card-icon">🎬</span>
+                    <h2 class="card-title">Cenas que Serão Gravadas</h2>
+                    <div class="kawaii-cat cat-4">🙀</div>
+                </div>
+                <div class="card-content">
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="antes-depois">
+                            <span class="checkmark"></span>
+                            ☐ Antes e depois
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="unboxing">
+                            <span class="checkmark"></span>
+                            ☐ Unboxing
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="textura">
+                            <span class="checkmark"></span>
+                            ☐ Textura de perto
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="personagem">
+                            <span class="checkmark"></span>
+                            ☐ Personagem (Belinha/Ravito)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="produto-uso">
+                            <span class="checkmark"></span>
+                            ☐ Produto em uso
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="bastidores">
+                            <span class="checkmark"></span>
+                            ☐ Bastidores
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="cenas" value="outro-cena" id="cenas-outro">
+                            <span class="checkmark"></span>
+                            ☐ Outro:
+                            <input type="text" id="cenas-outro-texto" placeholder="Digite aqui..." class="inline-input">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Benefício que Deve Ser Mostrado -->
+            <div class="card card-yellow">
+                <div class="card-header">
+                    <span class="card-icon">🌟</span>
+                    <h2 class="card-title">Benefício que Deve Ser Mostrado</h2>
+                    <div class="kawaii-cat cat-5">😽</div>
+                </div>
+                <div class="card-content">
+                    <label for="beneficio">✨ Destaque principal do produto no vídeo</label>
+                    <textarea id="beneficio" placeholder="Ex: conforto, beleza, preço etc." rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Card 6: Texto/Narração do Vídeo -->
+            <div class="card card-purple">
+                <div class="card-header">
+                    <span class="card-icon">💬</span>
+                    <h2 class="card-title">Texto/Narração do Vídeo</h2>
+                    <div class="kawaii-cat cat-6">😺</div>
+                </div>
+                <div class="card-content">
+                    <label for="narracao">🗣️ Escreva aqui o que será falado ou aparecerá como legenda</label>
+                    <textarea id="narracao" placeholder="Digite o texto completo da narração ou legendas..." rows="5"></textarea>
+                </div>
+            </div>
+
+            <!-- Card 7: Música ou Áudio -->
+            <div class="card card-pink">
+                <div class="card-header">
+                    <span class="card-icon">🎧</span>
+                    <h2 class="card-title">Música ou Áudio</h2>
+                    <div class="kawaii-cat cat-7">😹</div>
+                </div>
+                <div class="card-content">
+                    <label for="musica">🎵 Música que será usada (nome ou link) ou indique se será narrado/sem áudio</label>
+                    <textarea id="musica" placeholder="Digite o nome da música, link ou observações sobre áudio..." rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Card 8: Estilo Visual do Vídeo -->
+            <div class="card card-blue">
+                <div class="card-header">
+                    <span class="card-icon">✨</span>
+                    <h2 class="card-title">Estilo Visual do Vídeo</h2>
+                    <div class="kawaii-cat cat-8">😼</div>
+                </div>
+                <div class="card-content">
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="estilo" value="realista">
+                            <span class="checkmark"></span>
+                            ☐ Realista e sofisticado
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="estilo" value="criativo">
+                            <span class="checkmark"></span>
+                            ☐ Criativo e divertido
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="estilo" value="clean">
+                            <span class="checkmark"></span>
+                            ☐ Clean e leve
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="estilo" value="fofo">
+                            <span class="checkmark"></span>
+                            ☐ Fofo com mascotes
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="estilo" value="outro-estilo" id="estilo-outro">
+                            <span class="checkmark"></span>
+                            ☐ Outro:
+                            <input type="text" id="estilo-outro-texto" placeholder="Digite aqui..." class="inline-input">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9: Versões a Serem Criadas -->
+            <div class="card card-green">
+                <div class="card-header">
+                    <span class="card-icon">🌀</span>
+                    <h2 class="card-title">Versões a Serem Criadas</h2>
+                    <div class="kawaii-cat cat-9">😾</div>
+                </div>
+                <div class="card-content">
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="reels">
+                            <span class="checkmark"></span>
+                            ☐ Reels
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="tiktok">
+                            <span class="checkmark"></span>
+                            ☐ TikTok
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="story">
+                            <span class="checkmark"></span>
+                            ☐ Story com link
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="shorts">
+                            <span class="checkmark"></span>
+                            ☐ Shorts YouTube
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="narrada">
+                            <span class="checkmark"></span>
+                            ☐ Versão narrada
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="sem-texto">
+                            <span class="checkmark"></span>
+                            ☐ Versão sem texto
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="versoes" value="outro-versao" id="versoes-outro">
+                            <span class="checkmark"></span>
+                            ☐ Outro:
+                            <input type="text" id="versoes-outro-texto" placeholder="Digite aqui..." class="inline-input">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10: Observações Finais -->
+            <div class="card card-yellow">
+                <div class="card-header">
+                    <span class="card-icon">🐱</span>
+                    <h2 class="card-title">Observações Finais</h2>
+                    <div class="kawaii-cat cat-10">😿</div>
+                </div>
+                <div class="card-content">
+                    <label for="observacoes">📝 Anotações extras, lembretes, detalhes importantes</label>
+                    <textarea id="observacoes" placeholder="Digite suas observações e lembretes aqui..." rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão Final -->
+        <div class="button-container">
+            <button class="generate-button" onclick="gerarRoteiro()">
+                🎬 Gerar roteiro do vídeo
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
